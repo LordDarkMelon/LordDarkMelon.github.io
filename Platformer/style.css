@@ -1,0 +1,14 @@
+#messages{
+    display: inline-block;
+    width:375px;
+    height:900px ;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#game {
+    display: inline-block;
+    
+}
+body {
+    display: inline-block;
+}

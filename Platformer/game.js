@@ -5,10 +5,9 @@ var GROUND_SPRITE_WIDTH = 50;
 var GROUND_SPRITE_HEIGHT = 50;
 var numGroundSprites;
 var n = 0;
-var health = 10;
 function setup(){
-    isgameover = false;
-    createCanvas(1500,900);
+    var canvas = createCanvas(1500,900);
+    canvas.parent('game');
     background(150, 200, 250);
     groundSprites = new Group();
     numGroundSprites = width/GROUND_SPRITE_WIDTH + 1;
@@ -20,11 +19,7 @@ function setup(){
     var groundSprite = createSprite(n+ 900, height-250, 500,50);
         groundSprites.add(groundSprite);
     player = createSprite(150, height-75, 25, 50);
-            for(var x = 0; x < health; x++){
-                healthbars = new Group();
-            healthbar = createSprite(player.position.x-width/2+x*25,player.position.y-height/2+5,25,50);
-            
-        }
+    health = createSprite(player.position.x , player.position.y - 75.5, 125, 15);
 }
 
 function mousePressed(){
@@ -37,12 +32,16 @@ function draw(){
     camera.position.x = player.position.x;
     camera.position.y = player.position.y;
     player.velocity.y = player.velocity.y + gravity;
+    health.position.x = player.position.x;
+    health.position.y = player.position.y -50;
+    textSize(32);
+    text("hai", player.position.x-25,player.position.y-75);
         if(groundSprites.overlap(player)){
             jumptimes = 0;
             player.velocity.y = 0;
-            player.position.y = (player.position.y+50) - (player.height+1);
+            player.position.y = (player.position.y+50) - (player.height+0.1);
         }
-        if(keyDown(UP_ARROW) && jumptimes < 4){
+        if((keyDown(UP_ARROW)) && jumptimes < 4){
             player.velocity.y = JUMP;
             jumptimes++;
         }
@@ -70,5 +69,3 @@ function calcDirection(difX,difY){
     console.log(d);
     return d;
 }
-function endgame(){
-}   
