@@ -3,8 +3,9 @@ var rockets = [];
 var gravity = 0.4;
 var fires = [];
 var scaleCounter = 0;
+
 function setup() {
-    var canvas = createCanvas( 1000,1000);
+    var canvas = createCanvas(1000, 1000);
     background("#081217");
     rocketSound = loadSound("rocket.mp3");
 }
@@ -18,6 +19,7 @@ function mousePressed() {
     rocket.velocity.y = -10;
     rockets.push(rocket);
 }
+
 function draw() {
     background("#081217");
     for (var i = 0; i < rockets.length; i++) {
@@ -31,24 +33,25 @@ function draw() {
         }
     }
     scaleCounter++;
-    if(scaleCounter == 5){
+    if (scaleCounter == 5) {
         scaleCounter = 0;
-    for (var n = 0; n < fires.length; n++) {
-        fires[n].velocity.y += gravity;
-         fires[n].scale *= 0.9;
-         if(fires[n].scale <= 0.1){
-             fires[n].remove();
-         }
-    }
+        for (var n = 0; n < fires.length; n++) {
+            fires[n].velocity.y += gravity;
+            fires[n].scale *= 0.9;
+            if (fires[n].scale <= 0.1) {
+                fires[n].remove();
+            }
+        }
     }
     drawSprites();
 }
-function explode(x, y){
+
+function explode(x, y) {
     rocketSound.play();
-    for(var a = 0; a < 360; a++){
-        fire = createSprite(x,y,5,5);
+    for (var a = 0; a < 360; a++) {
+        fire = createSprite(x, y, 5, 5);
         var r = random(360);
-        fire.setSpeed(random(5,10),r);
+        fire.setSpeed(random(5, 10), r);
         fires.push(fire)
     }
 }
