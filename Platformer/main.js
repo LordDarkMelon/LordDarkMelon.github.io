@@ -3,6 +3,8 @@
  var playerArray = [];
  var playerSprites = [];
  var config = {
+ var newX;
+ var newY;
   apiKey: "AIzaSyCeylwYo1QMoVyITviu-7_SOb8GlyWdfr8",
   authDomain: "chat-app-ee1ec.firebaseapp.com",
   databaseURL: "https://chat-app-ee1ec.firebaseio.com",
@@ -25,7 +27,7 @@ function playersAdded(newPlayer) {
    var text = $('#messageInput').val();
    chatData.push({
     name: name,
-    text: text
+   text: text
    });
    $('#messageInput').val('');
   }
@@ -54,6 +56,11 @@ function playersAdded(newPlayer) {
   $('#messages').append(messageE1);
  }
  $('#messageInput').keypress(pushMessage);
-
+ chatData.on("child_changed", PlayerChanged);
+ newX = newPlayer.position.x;
+ newY = newPlayer.position.y;
+function PlayerChanged() {
+ newX = firebase.push.apply()
+}
  function ButtonPressed() {}
- $("#button").on("click", ButtonPressed);
+ $("#button").on("click", ButtonPressed);           

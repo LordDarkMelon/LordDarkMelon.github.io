@@ -1,0 +1,9 @@
+
+body{
+   background-color: #123456;
+}
+#game{
+    margin-left: auto;
+    margin-right: auto;
+   width:1366px;
+}

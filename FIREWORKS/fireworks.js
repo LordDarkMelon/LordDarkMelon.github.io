@@ -33,7 +33,7 @@ function draw() {
         }
     }
     scaleCounter++;
-    if (scaleCounter == 5) {
+    if (scaleCounter == 10) {
         scaleCounter = 0;
         for (var n = 0; n < fires.length; n++) {
             fires[n].velocity.y += gravity;
@@ -48,7 +48,7 @@ function draw() {
 
 function explode(x, y) {
     rocketSound.play();
-    for (var a = 0; a < 360; a++) {
+    for (var a = 0; a < 500; a++) {
         fire = createSprite(x, y, 5, 5);
         var r = random(360);
         fire.setSpeed(random(5, 10), r);

@@ -7,6 +7,7 @@ var numGroundSprites;
 var n = 0;
 var bar = 125;
 var PlayerObject;
+
 function setup() {
     var canvas = createCanvas(1500, 900);
     canvas.parent('game');
@@ -28,6 +29,7 @@ function setup() {
         positionY: player.position.y,
     };
 }
+
 function mousePressed() {
     var direction = calcDirection(mouseX - width / 2, height / 2 - mouseY);
     bullets = createSprite(player.position.x, player.position.y, 10, 10);
@@ -61,10 +63,6 @@ function draw() {
     drawSprites();
 }
 
-function keyTyped() {
-
-}
-
 function calcDirection(difX, difY) {
     var a = (difX);
     var b = (difY);
@@ -76,6 +74,5 @@ function calcDirection(difX, difY) {
         var c = Math.atan(b / -a);
     }
     var d = c * 180 / Math.PI;
-    console.log(d);
     return d;
 }
