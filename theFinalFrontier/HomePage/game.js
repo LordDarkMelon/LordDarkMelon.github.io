@@ -12,21 +12,12 @@ function stars(){
 }
 }
 function setup() {
-    var canvas = createCanvas(2051, 1018);
+    var canvas = createCanvas(1900, 950);
     background("#000000");
-    var rocket = createSprite(width/2,height/2, 42,52);
-    rocketImage = loadImage("rocket.png");
-    rocket.addImage(rocketImage);
     stars();
 }
 function draw(){
     background("#000000");
     stars();
-    if (keyDown(RIGHT_ARROW)) {
-        rocket.position.x = rocket.position.x + 10;
-}
-    if(keyDown((LEFT_ARROW))){
-        rocket.position.x = rocket.position.x - 10;
-}
-    drawSprites();
+drawSprites();
 }

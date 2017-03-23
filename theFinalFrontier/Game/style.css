@@ -1,8 +1,5 @@
 
-body{
-   background-color: #123456;
-}
-#game{
+#iframe{
     margin-left: auto;
     margin-right: auto;
    width:1366px;

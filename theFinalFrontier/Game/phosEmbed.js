@@ -1,16 +1,3 @@
-var count = 0;
-function stars(){
-    while(count<1000){
-    starGroup = new Group();
-    for(var i = 0; i <100; i++){
-    var Ycord= Math.floor((Math.random() * 1018));
-    var Xcord = Math.floor((Math.random() * 2051));
-    starSprite = createSprite(Xcord,Ycord, 1,1);
-    starGroup.add(starSprite);
-    count ++;
-    }
-}
-}
 (function(global) {
   'use strict';
 
@@ -38,8 +25,4 @@ function stars(){
 
   script.parentNode.replaceChild(iframe, script);
 
-}(this));
-function draw(){
-    stars();
-    drawSprites;
-}
+}(this)); 
