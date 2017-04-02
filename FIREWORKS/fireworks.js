@@ -1,6 +1,6 @@
 var rocket;
 var rockets = [];
-var gravity = 0.4;
+var gravity = 1;
 var fires = [];
 var scaleCounter = 0;
 

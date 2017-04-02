@@ -1,4 +1,4 @@
-(function(global) {
+(function(global){
   'use strict';
 
   var script = document.currentScript || (function(scripts) {
@@ -8,9 +8,9 @@
   var hasUI = true;
   var params = script.src.split('?')[1].split('&');
   params.forEach(function(p) {
-    var parts = p.split('=');
-    if (parts.length > 1 && parts[0] === 'ui') {
-      hasUI = parts[1] !== 'false';
+        var parts = p.split('=');
+        if (parts.length > 1 && parts[0] === 'ui') {
+          hasUI = parts[1] !== 'false';
     }
   });
 
