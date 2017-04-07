@@ -7,8 +7,8 @@ function stars()
     {
         for (var i = 0; i < 100; i++) 
         {
-            var Ycord = Math.floor((Math.random() * 950 ));
-            var Xcord = Math.floor((Math.random() * 1900));
+            var Ycord = Math.floor((Math.random() * 3000));
+            var Xcord = Math.floor((Math.random() * window.screen.availWidth));
             var starSprite = createSprite(Xcord, Ycord, 1, 1);
             starGroup.add(starSprite);
             count++;
@@ -22,7 +22,7 @@ function mousePressed() {
 }
 function setup() 
 {
-    var canvas = createCanvas(1900, 950);
+    var canvas = createCanvas(window.screen.availWidth,3000);
     background("#000000");
 }
 

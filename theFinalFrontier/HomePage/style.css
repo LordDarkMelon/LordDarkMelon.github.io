@@ -16,3 +16,16 @@
     width: 1920;
     height: 750;
 }
+#about{
+    position: absolute;
+    top: 1000px;
+    left:800px;
+        color: #ffffff
+}
+#aboutGame{   
+    position: absolute;
+    top: 1100px;
+    left:800px;
+        color: #ffffff
+    
+}
