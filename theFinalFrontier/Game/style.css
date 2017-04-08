@@ -1,9 +1,9 @@
 
 #iframe{
-    position: absolute;
+    position: relative;
     top: 500px;
-    left: 500px;
-   width:1366px;
+    left: 200px;
+
 }
 #title_main_img {
     position: absolute;
