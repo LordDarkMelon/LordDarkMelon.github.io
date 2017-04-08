@@ -89,7 +89,7 @@
 
 #aboutUsText {
     position: absolute;
-    left: 275px;
+    left: 225px;
     top: 1650px;
     text-align: center;
     font-family: inherit;
@@ -100,7 +100,7 @@
 #Contact {
     position: absolute;
     top: 2400px;
-    left: 600px;
+    left: 700px;
     text-align: center;
     font-family: inherit;
     font-size: 20px;
