@@ -79,7 +79,7 @@
 
 #aboutUs {
     position: absolute;
-    left: 775px;
+    left: 750px;
     top: 1600px;
     text-align: center;
     font-family: inherit;
@@ -89,7 +89,7 @@
 
 #aboutUsText {
     position: absolute;
-    left: 225px;
+    left: 275px;
     top: 1650px;
     text-align: center;
     font-family: inherit;
