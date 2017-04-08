@@ -1,4 +1,4 @@
-#Title{
+#Title {
     text-align: center;
     font-family: inherit;
     font-size: 30px;
@@ -7,25 +7,49 @@
     left: 590px;
     color: #ffffff
 }
-#title_main_img{
+
+#title_main_img {
     position: absolute;
     top: 219px;
     left: 694px;
 }
+
 #Game {
     width: 1920;
     height: 750;
 }
-#about{
+
+#about {
     position: absolute;
     top: 1000px;
-    left:800px;
-        color: #ffffff
+    left: 800px;
+    color: #ffffff
 }
-#aboutGame{   
+
+#aboutGame {
     position: absolute;
     top: 1100px;
-    left:800px;
-        color: #ffffff
-    
+    left: 800px;
+    color: #ffffff
+}
+
+#sidebar {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+#link1 {
+    text-align: center;
+    font-family: inherit;
+}
+
+#link2 {
+    text-align: center;
+    font-family: inherit;
+}
+
+#link3 {
+    text-align: center;
+    font-family: inherit;
 }
