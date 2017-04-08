@@ -4,13 +4,13 @@
     font-size: 30px;
     position: absolute;
     top: 100px;
-    left: 450px;
+    left: 350px;
     color: #ffffff
 }
 
 #title_main_img {
     position: absolute;
-    top: 300px;
+    top: 200px;
     left: 700px;
 }
 
@@ -59,7 +59,7 @@
 
 #aboutGame {
     position: absolute;
-    left: 750px;
+    left: 650px;
     top: 800px;
     text-align: center;
     font-family: inherit;
@@ -69,7 +69,7 @@
 
 #aboutGameText {
     position: absolute;
-    left: 347px;
+    left: 247px;
     top: 850px;
     text-align: center;
     font-family: inherit;
@@ -79,7 +79,7 @@
 
 #aboutUs {
     position: absolute;
-    left: 775px;
+    left: 675px;
     top: 1600px;
     text-align: center;
     font-family: inherit;
@@ -89,7 +89,7 @@
 
 #aboutUsText {
     position: absolute;
-    left: 275px;
+    left: 175px;
     top: 1650px;
     text-align: center;
     font-family: inherit;
@@ -100,7 +100,7 @@
 #Contact {
     position: absolute;
     top: 2400px;
-    left: 775px;
+    left: 675px;
     text-align: center;
     font-family: inherit;
     font-size: 20px;
@@ -110,7 +110,7 @@
 #ContactsText {
     position: absolute;
     top: 2450px;
-    left: 475px;
+    left: 375px;
     text-align: center;
     font-family: inherit;
     font-size: 20px;
