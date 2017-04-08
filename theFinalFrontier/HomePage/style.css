@@ -110,9 +110,21 @@
 #ContactsText {
     position: absolute;
     top: 2450px;
-    left: 715px;
+    left: 475px;
     text-align: center;
     font-family: inherit;
     font-size: 20px;
+    color: #ffffff;
+}
+#back1{
+    text-decoration: blink;
+    color: #ffffff;
+}
+#back2{
+    text-decoration: blink;
+    color: #ffffff;
+}
+#back3{
+    text-decoration: blink;
     color: #ffffff;
 }
