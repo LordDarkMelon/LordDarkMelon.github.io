@@ -5,7 +5,8 @@
     left: 200px;
 
 }
-#title_main_img {
+#Icon {
     position: absolute;
-    
+text-decoration: blink;
+color: #000000;
 }
