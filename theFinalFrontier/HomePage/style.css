@@ -11,7 +11,7 @@
 #title_main_img {
     position: absolute;
     top: 300px;
-    left: 600px;
+    left: 675px;
 }
 
 #Game {
@@ -100,7 +100,7 @@
 #Contact {
     position: absolute;
     top: 2400px;
-    left: 675px;
+    left: 600px;
     text-align: center;
     font-family: inherit;
     font-size: 20px;
@@ -110,7 +110,7 @@
 #ContactsText {
     position: absolute;
     top: 2450px;
-    left: 375px;
+    left: 400px;
     text-align: center;
     font-family: inherit;
     font-size: 20px;
