@@ -7,14 +7,42 @@
     font-size:50px;
     color:white;
 }
-#yes{
+#Yes{
     width: 300px;
     height: 300px;
-    border-radius:300px;
+    border-radius:150px;
     border-color: black;
     background-color:green;
     font-size:50px;
     color:white;
 }
+#Yes{
+    width: 300px;
+    height: 300px;
+    border-radius:150px;
+    border-color: black;
+    background-color:green;
+    font-size:50px;
+    color:white;
+}
+#Little{
+    width: 300px;
+    height: 300px;
+    border-radius:150px;
+    border-color: black;
+    background-color:green;
+    font-size:50px;
+    color:white;
+}
+#Profanity{
+    width: 300px;
+    height: 300px;
+    border-radius:150px;
+    border-color: black;
+    background-color:green;
+    font-size:50px;
+    color:white;
+}
+
 
 

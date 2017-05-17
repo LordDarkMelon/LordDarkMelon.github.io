@@ -11,5 +11,20 @@ function sayyes() {
     console.log("YES");
 
 }
+function sayLittle() {
+   var Little = new Audio("Little.mp3");
+    Little.play(); 
+    console.log("YES");
+    
+}
+function sayProfanity() {
+   var Profanity = new Audio("Profanity.mp3");
+    Profanity.play(); 
+    console.log("YES");
+    
+}
+
+$("#Profanity").on("click", sayProfanity);
+$("#Little").on("click", sayLittle);
 $("#Yes").on("click", sayyes);
 $("#easy").on("click", sayThatWasEasy);
